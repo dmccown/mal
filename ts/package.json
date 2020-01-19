@@ -1,0 +1,16 @@
+{
+  "name": "mal-typescript",
+  "version": "1.0.0",
+  "description": "A Lisp created in Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && npm run test:step0"
+  },
+  "author": "David McCown",
+  "license": "MIT",
+  "devDependencies": {
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.5",
+    "typescript-formatter": "^7.2.2"
+  }
+}
