@@ -4,13 +4,19 @@
   "description": "A Lisp created in Typescript",
   "main": "index.js",
   "scripts": {
-    "test": "npm run build && npm run test:step0"
+    "build": "tsfmt -r *.ts && tsc -p ./",
+    "test": "npm run build && npm run test:step0",
+    "test:step0": "cd .. && make 'test^ts^step0'"
   },
   "author": "David McCown",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^13.1.8",
     "tslint": "^5.20.1",
     "typescript": "^3.7.5",
     "typescript-formatter": "^7.2.2"
+  },
+  "dependencies": {
+    "node": "^13.6.0"
   }
 }
